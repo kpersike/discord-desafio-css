@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+h1{
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 505px;
+    color: #ffffff;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px 0 24px;
+    gap: 24px;
+}
+
+.buttons{
+    display: flex;
+    flex-flow: column;
+    gap: 16px;
+}
+
+button{
+    height: 54px;
+    border-radius: 28px;
+    border: none;
+}
+
+header{
+    background-image: url('assets/Header\ Background.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+#section-1, #section-2, #section-3, #section-4{
+    color: #23272A;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 27px;
+    padding: 40px 24px 40px 24px;
+}
+
+#section-1, #section-3{
+    background-color: #FFFFFF;
+}
+
+#section-1 h2, #section-2 h2, #section-3 h2{
+    font-weight: 800;
+    font-size: 24px;
+}
+
+#section-2, #section-4{
+    background-color: #F6F6F6;
+}
+
+footer{
+    background-color: #23272A;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 429px){
+    header, #section-1, #section-2, #section-3, #section-4, footer{
+        padding: 40px 155px 40px 155px;
+    }
+
+    .header-content{
+        display: block;
+        text-align: center;
+    }
+
+    .buttons{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    button{
+        height: 44px;
+    }
+    
+    .buttons button:first-of-type{
+        width: 205px;
+    }
+
+    .buttons button:nth-of-type(2){
+        width: 281px;
+    }
+
+    #section-1, #section-3{
+        flex-direction: row;
+    }
+
+    #section-2{
+        flex-direction: row-reverse;
+    }
+
+    #section-4{
+        text-align: center;
+    }
+
+    footer{
+        height: 134px;
+    }
+}
